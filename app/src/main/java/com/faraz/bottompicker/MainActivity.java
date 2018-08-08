@@ -1,13 +1,11 @@
 package com.faraz.bottompicker;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 /**
  * Created by Faraz Ahmed on 8/6/2018.
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity implements CallbackNextGenPi
 
     @Override
     public void onValueChangedListener(int index, String value, int type) {
-        Log.e(MainActivity.class.getSimpleName(),"OnValue Change Listener: " + value);
     }
 
     @Override
@@ -54,11 +51,11 @@ public class MainActivity extends AppCompatActivity implements CallbackNextGenPi
 
     @Override
     public void onShowPicker(int type) {
-
+        Log.e(MainActivity.class.getSimpleName(),"Picker Type: " + type);
     }
 
     @Override
     public void onHidePicker(int type) {
-
+        Log.e(MainActivity.class.getSimpleName(),"Picker Type: " + type);
     }
 }
